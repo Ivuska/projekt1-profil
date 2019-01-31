@@ -17,23 +17,28 @@ html { box-sizing: border-box; }
 body {
 	background-color: #bdc3c7;
 	max-width: 250px;
-	box-shadow: 5px 5px 5px grey;
+	margin: 0;
 }
 
 .profil{
 	background-color: #31363b;
+	box-shadow: 5px 5px 5px grey;
 }
 
-.foto {
-	max-width: 250px;
+.profil .hlavicka{
+	position: relative;
 }
 
-.logo{
+.profil .hlavicka .logo{
 	background-color: #b92e81;
 	border-radius: 50%;
 	position: absolute;
 	left: 180px;
 	top: 150px;
+}
+
+.foto {
+	max-width: 250px;
 }
 
 .obsah{
@@ -45,63 +50,54 @@ body {
 	border-bottom-style: solid;
 }
 
-h1{
+.obsah h1{
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5em;
-}
-
-ul {
-	list-style: none;
 }
 
 ul li{
 	display: inline-block;
 }
 
-a {
-	text-decoration: none;
-	text-align: center;
-	color: #bdc3c7;
-	padding: 10px 10px;
-}
-
 .odkazy{
-	font-family: 'Montserrat', sans-serif;
-	font-size:0.75em;	
 	padding: 0;
 	margin: 0;
 }
 
-.portfolio {
-	display: block;
+.odkazy li{
 	padding: 10px 0;
 	text-align: center;
 	text-transform: uppercase;
+	list-style: none;
+	font-weight: bold;
+}
+
+.odkazy a{
+	font-family: 'Montserrat', sans-serif;
+	font-size:0.75em;	
+	text-decoration: none;
+	text-align: center;
+	color: #bdc3c7;
+	padding: 10px 0;
+}
+.portfolio {
+	display: block;
 	border-bottom-color: #3f464d;
 	border-bottom-style: solid;
-	font-weight: bold;
 }
 
 .facebook {
 	display:inline-block;
-	padding: 10px 0;
-	text-transform: uppercase;
-	text-align:center;
-	font-weight: bold;
 	width: 50%;
 }
 
 .twitter {
 	display:inline-block;
-	padding: 10px 0;
+	width: 50%;
 	border-left-color: #3f464d;
 	border-left-style: solid;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
 	float: right;
-	width: 50%;
 }
 
 .portfolio a:hover, a:focus{
